@@ -1,0 +1,152 @@
+*{
+
+  margin: 0;
+  padding: 0;
+
+}
+body {
+    
+    background-color: #0f0018; 
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
+nav{
+
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+div.img{
+  width: 200px;
+  height: 100px;
+  padding: 10px 20px;
+  margin-left: 200px;
+}
+nav .buttons{
+  
+ display: flex;
+
+
+ justify-content: center;
+}
+  
+  div.buttons{
+
+    margin: auto;
+    color: white;
+    gap: 60px;
+cursor: pointer;
+    padding: 0px 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  
+  }
+ 
+  .sign{
+    
+    border-radius: 50px;
+    padding: 5px 20px;
+    background:  #0f0018;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(116, 116, 116);
+    cursor: pointer;
+    
+    
+  }
+
+  .sign:hover{
+    background-color: rgb(54, 2, 54);
+  }
+
+  .buttons span:hover {
+    text-decoration: underline;
+  }
+
+   .text1{
+    color: white;
+    margin: 100px;
+    width:350px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+  }
+
+  div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+  }
+
+  .image1 img{
+margin-right: 200px;
+border-radius: 70px;
+margin-top: 40px;
+  }
+
+  .trynow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .free{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 80px;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 70px;
+    background-color: #ffffff00;
+    padding: 5px 40px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+  }
+
+  .free:hover{
+    background-color: rgb(54, 2, 54);
+  }
+
+.line{
+  
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 2px;
+}
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content2{
+
+  color: white;
+  margin: 50px 250px;
+  display: flex;
+
+ justify-content: center;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+gap: 10px;
+  font-size: 30px;
+ 
+  
+}
+.content2 .text3{
+color: #57076E;
+}
