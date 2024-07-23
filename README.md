@@ -13,4 +13,8 @@ This project focuses on generating images from text prompts in multiple language
 pip install -r requirements.txt
 ```
   
+<h3>Code Snippets</h3>
 <img src = "https://github.com/ArnavGhosh999/INTERACTIVE-ARTWORK-GENERATOR/blob/main/Images/Artwork%20Gen%20design.png">
+
+<img src = "https://github.com/user-attachments/assets/b3785cb4-77c3-4b33-8106-c079e9a98600">
+
