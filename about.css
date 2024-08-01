@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-  
 }
 
 .about {
@@ -15,7 +14,6 @@
     height: 30vw;
     display: block;
     opacity: 0.5;
-   
 }
 
 .main-text {
@@ -35,10 +33,10 @@
 }
 
 .sec-text {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-weight: 10;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,8 +44,8 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-   font-weight: 400;
+    width: 60%;
+    text-align: center;
 }
 
 /* New Section Styles */
@@ -60,62 +58,57 @@
     cursor: pointer;
 }
 
-.text{
+.text {
     color: white;
     font-size: 30px;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 0px;
-    font-family:'Raleway';
-    
-
-}
-
-.circle {
-    width: 60vw; 
-    height: 30vw; 
-    border: 5px solid #CA32FF; 
-    border-radius: 10px; 
-    background-color: transparent; 
-    position: absolute;
- 
-    z-index: -1;
-    box-shadow: 0 0 20px rgba(200, 162, 200, 0.7); 
+    font-family: 'Raleway';
 }
 
 .steps {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     z-index: 1;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 70%; /* Adjust the width as needed */
 }
 
 .step {
-    width: 50vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
 }
 
-.step-left {
-    justify-content: flex-start;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+.step-left,
 .step-right {
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .step-content {
     background: #6d397e;
     color: black;
-    padding: 20px 30px;
-    border-radius: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
     width: 100%;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
 
 .step-content:hover {
@@ -124,17 +117,155 @@
 }
 
 .step-content h3 {
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 5px;
+    font-size: 20px;
     color: #0f0018;
 }
 
 .step-content p {
-    font-size: 20px;
-    color:  black;
+    font-size: 16px;
+    color: black;
 }
 
-body{
+body {
     background: linear-gradient(180deg, #0f0018 0%, #22003D 100%);
+}
 
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .main-text {
+        font-size: 60px;
+    }
+
+    .sec-text {
+        font-size: 15px;
+        margin-top: 2vw;
+    }
+
+    .steps {
+        width: 75%;
+    }
+
+    .step-content h3 {
+        font-size: 18px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-text {
+        font-size: 50px;
+        top: 25%;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+    .big-container {
+        padding-top: 0px;
+    }
+    .sec-text {
+        font-size: 20px;
+        margin-top: 2vw;
+    }
+
+    .steps {
+        width: 70%;
+    }
+
+    .step-content h3 {
+        font-size: 16px;
+    }
+
+    .step-content p {
+        font-size: 12px;
+    }
+    .about img {
+        width: 100vw;
+        height: 100vw;
+        display: block;
+        opacity: 0.5;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-text {
+        font-size: 40px;
+        top: 20%;
+    }
+
+    .sec-text {
+        font-size: 16px;
+        top: 50%;
+        width: 85%;
+    }
+
+    .steps {
+        width: 65%;
+    }
+
+    .step-content h3 {
+        font-size: 14px;
+    }
+
+    .step-content p {
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .main-text {
+        font-size: 30px;
+        top: 15%;
+    }
+
+    .big-container {
+        padding-top: 0px;
+    }
+
+    .sec-text {
+        font-size: 15px;
+        top: 50%;
+        width: 90%;
+    }
+
+    .steps {
+        width: 60%;
+    }
+
+    .step-content h3 {
+        font-size: 12px;
+    }
+
+    .step-content p {
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
 }
