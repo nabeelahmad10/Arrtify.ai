@@ -17,7 +17,7 @@ main{
 .boxtype{
     box-shadow: 0 0 10px #CA32FF;
     backdrop-filter: blur(10px);
-border-radius: 30px;
+border-radius: 10px;
     width: 50vw;
     height: 15vh;
 color: white;
@@ -120,6 +120,10 @@ font-family: 'Raleway', sans-serif;
     }
 
 
+    .boxtype{
+        border-radius: 10px;
+
+    }
 
     .boxtype{
         box-shadow: 0 0 10px #CA32FF;
@@ -145,6 +149,9 @@ font-family: 'Raleway', sans-serif;
         display: flex;
         justify-content: center;
         margin: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        align-self: center;
     }
 
 
@@ -209,17 +216,24 @@ font-family: 'Raleway', sans-serif;
 @media screen and (max-width: 717px){
 
     .bigtext{
-        font-size: 20px;
+        font-size: 28px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         align-items: center;
         display: flex;
         justify-content: center;
         margin: 80px;
+     margin-right: auto;
+     margin-left: auto;
+        align-self: center;
     }
 
 
     
+    .boxtype{
+        border-radius: 10px;
+
+    }
 
 }
 
@@ -227,13 +241,17 @@ font-family: 'Raleway', sans-serif;
 @media screen and (max-width: 531px){
 
     .bigtext{
-        font-size: 15px;
+        font-size: 26px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         align-items: center;
         display: flex;
         justify-content: center;
         margin: 80px;
+        margin-right: auto;
+        margin-left: auto;
+   text-align: center;
+     
     }
 
 
@@ -275,6 +293,10 @@ font-family: 'Raleway', sans-serif;
         margin-bottom: 2vw;
       }
 
+      .boxtype{
+        border-radius: 10px;
+
+    }
 
 }
 
@@ -303,13 +325,16 @@ font-family: 'Raleway', sans-serif;
 
 
     .bigtext{
-        font-size: 12px;
+        font-size: 24px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         align-items: center;
         display: flex;
         justify-content: center;
         margin: 80px;
+        margin-right: auto;
+    margin-left: auto;
+        text-align: center;
     }
 
     .smalltext{
@@ -370,6 +395,10 @@ font-family: 'Raleway', sans-serif;
     }
     
 
+    .boxtype{
+        border-radius: 10px;
+
+    }
 }
 
 
@@ -382,13 +411,16 @@ font-family: 'Raleway', sans-serif;
     }
 
     .bigtext{
-        font-size: 9px;
+        font-size: 17px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         align-items: center;
         display: flex;
         justify-content: center;
         margin: 80px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 
     .smalltext{
@@ -398,6 +430,9 @@ font-family: 'Raleway', sans-serif;
      
     }
 
+    .boxtype{
+        border-radius: 10px;
 
+    }
     
 }
