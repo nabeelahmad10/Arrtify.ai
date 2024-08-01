@@ -4,7 +4,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, #0f0018 0%, #22003D 100%);
+    background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
     width: 100%;
     height: 100%;
 }
@@ -17,7 +17,7 @@ main{
 .boxtype{
     box-shadow: 0 0 10px #CA32FF;
     backdrop-filter: blur(10px);
-border-radius: 50px;
+border-radius: 30px;
     width: 50vw;
     height: 15vh;
 color: white;
@@ -51,7 +51,7 @@ font-family: 'Raleway', sans-serif;
   box-shadow: 0 0 10px #CA32FF;
   backdrop-filter: blur(10px);
   border-radius: 40px;
-  padding: 10px 20px;
+  padding: 10px 50px;
   background: #0f0018;
   color: rgb(255, 255, 255);
   border: 1px solid rgb(116, 116, 116);
@@ -59,7 +59,7 @@ font-family: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
   width: 100px; 
   height: 30px; 
   right: auto;
@@ -78,8 +78,8 @@ font-family: 'Raleway', sans-serif;
     background-color:rgba(228, 196, 228, 0.048);
     box-shadow: 0 0 5px #CA32FF;
   backdrop-filter: blur(10px);
-    width: 50vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,23 +87,16 @@ font-family: 'Raleway', sans-serif;
     margin-right: auto;
     margin-top: 6vw;
     border-radius: 20px;
-    gap: 7vw;
+
     margin-bottom: 5vw;
+
 }
 
 .imagebox1{
 
-    background-color: white;
-    width:17vw;
-    height: 17vw;
-    border-radius: 10px;
-
-}
-.imagebox2{
-
-    background-color: white;
-    width: 17vw;
-    height: 17vw;
+    background-color: rgba(125, 86, 143, 0.767);
+    width: 37vw;
+    height: 37vw;
     border-radius: 10px;
 
 }
@@ -111,22 +104,300 @@ font-family: 'Raleway', sans-serif;
 
   
   
-.sign2 {
-    display: block;
-    clear: both; /* Forces the element to move below any floated elements */
+
+
+
+
+
+
+@media screen and (max-width: 1090px){
+    
+    .smalltext{
+        font-size: 10px;
+       margin: 2vw 4vw;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+     
+    }
+
+
+
+    .boxtype{
+        box-shadow: 0 0 10px #CA32FF;
+        backdrop-filter: blur(10px);
+    border-radius: 50px;
+        width: 60vw;
+        height: 20vh;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    background-color:  rgba(228, 196, 228, 0.048);
+    margin: 50px auto;
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+    .bigtext{
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+    }
+
+
+    
+.sign {
     box-shadow: 0 0 10px #CA32FF;
     backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 10px 40px;
-    background: purple;
+    border-radius: 40px;
+    padding: 7px 50px;
+    background: #0f0018;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(116, 116, 116);
     cursor: pointer;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    width: 200px; 
+    margin: auto;
+    width: 30px; 
     height: 30px; 
+    right: auto;
     font-size: 20px;
+    left: auto;
+    margin-bottom: 2vw;
+  }
+
+
+
+
+  .imagebox1{
+
+    background-color: rgba(125, 86, 143, 0.767);
+    width: 47vw;
+    height: 47vw;
+    border-radius: 10px;
+
 }
 
+
+.generatedbox{
+    background-color:rgba(228, 196, 228, 0.048);
+    box-shadow: 0 0 5px #CA32FF;
+  backdrop-filter: blur(10px);
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vw;
+    border-radius: 20px;
+    margin-bottom: 5vw;
+
+}
+
+  
+  
+
+}
+
+
+@media screen and (max-width: 717px){
+
+    .bigtext{
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+    }
+
+
+    
+
+}
+
+
+@media screen and (max-width: 531px){
+
+    .bigtext{
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+    }
+
+
+
+    .boxtype{
+        box-shadow: 0 0 10px #CA32FF;
+        backdrop-filter: blur(10px);
+    border-radius: 50px;
+        width: 60vw;
+        height: 10vh;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    background-color:  rgba(228, 196, 228, 0.048);
+    margin: 50px auto;
+    font-family: 'Raleway', sans-serif;
+    }
+
+    
+    .sign {
+        box-shadow: 0 0 10px #CA32FF;
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        padding: 4px 40px;
+        background: #0f0018;
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(116, 116, 116);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 20px; 
+        height: 20px; 
+        right: auto;
+        font-size: 10px;
+        left: auto;
+        margin-bottom: 2vw;
+      }
+
+
+}
+
+@media screen and (max-width:  438px){
+    .boxtype{
+        box-shadow: 0 0 10px #CA32FF;
+        backdrop-filter: blur(10px);
+    border-radius: 30px;
+        width: 70vw;
+        height: 5vh;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    background-color:  rgba(228, 196, 228, 0.048);
+    margin: 50px auto;
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+    body{
+        background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    .bigtext{
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+    }
+
+    .smalltext{
+        font-size: 7px;
+       margin: 2vw 4vw;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+     
+    }
+
+
+    .sign {
+        box-shadow: 0 0 10px #CA32FF;
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        padding: 5px 30px;
+        background: #0f0018;
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(116, 116, 116);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 10px; 
+        height: 10px; 
+        right: auto;
+        font-size: 7px;
+        left: auto;
+        margin-bottom: 2vw;
+      }
+
+
+      .generatedbox{
+        background-color:rgba(228, 196, 228, 0.048);
+        box-shadow: 0 0 5px #CA32FF;
+      backdrop-filter: blur(10px);
+        width: 50vw;
+        height: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vw;
+        border-radius: 20px;
+    
+        margin-bottom: 5vw;
+    
+    }
+    
+    .imagebox1{
+    
+        background-color: rgba(125, 86, 143, 0.767);
+        width: 47vw;
+        height: 47vw;
+        border-radius: 10px;
+    
+    }
+    
+
+}
+
+
+@media screen and (max-width:  400px){
+
+    body{
+        background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .bigtext{
+        font-size: 9px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 80px;
+    }
+
+    .smalltext{
+        font-size: 6px;
+       margin: 2vw 4vw;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+     
+    }
+
+
+    
+}
