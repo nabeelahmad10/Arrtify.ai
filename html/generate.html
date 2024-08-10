@@ -1,84 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artify</title>
-    <link rel="stylesheet" href="./../styles/style.css">
-    <link rel="stylesheet" href="./../styles/generate.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+    <title>Generate Image</title>
+    <link rel="stylesheet" href="/styles/generate.css">
 </head>
-
 <body>
-
-
-    <main>
-        <div class="img">
-            <img src="./../Images/Untitled (1).png" width="119px" style="padding: 20px 50px;" alt="">
-        </div>
-        <nav>
-            <div class="buttons " style="display: flex; justify-content: center; align-items: center;">
-                <span><a href="./../html/index.html" style="color: white; text-decoration: none;">Home</a></span>
-                <span>Generate</span>
-                <span><a href="./../html/about.html" style="color: white; text-decoration: none;">About</a></span>
-            </div>
-        </nav>
-    </main>
-
-    <div class="bigtext">INTERACTIVE ARTWORK GENERATOR</div>
-    <div class="boxtype">
-       
-        <div class="smalltext">
-           Describe what you want to see...</div>
-
-
+    <h1>Generate an Image</h1>
+    <form action="/generate_image" method="POST">
+        <label for="prompt">Enter a prompt:</label>
+        <input type="text" id="prompt" name="prompt">
+        <button type="submit">Generate</button>
+    </form>
+    <div id="result">
+        <!-- The generated image will be displayed here -->
     </div>
-
-    <div class="sign">Submit</div>
-
-
-
-
-      </div>
-
-
-
-
-      <div class="generatedbox">
-
-
-    
-          
-
-<div class="imagebox1">
-
-
-</div>
-
-
-<div class="imagebox2">
-
-
-
-
-
-      </div>
-
-    </div>
-
-</div>
-
-
-
-
-<div class="sign">Download</div>
-
-
-
-
-</div>
 </body>
-
 </html>
