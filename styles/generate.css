@@ -1,35 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
     width: 100%;
     height: 100%;
 }
 
-main{
+main {
     right: 10px;
     position: relative;
 }
 
-.boxtype{
-    box-shadow: 0 0 10px #CA32FF;
-    backdrop-filter: blur(10px);
-border-radius: 10px;
+.smalltext {
     width: 50vw;
     height: 15vh;
-color: white;
-display: flex;
-align-items: flex-start;
-justify-content: left;
-background-color:  rgba(228, 196, 228, 0.048);
-margin: 50px auto;
-font-family: 'Raleway', sans-serif;
+    margin: 50px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
-.bigtext{
+.smalltext textarea {
+    background-color: rgba(228, 196, 228, 0.048);
+    box-shadow: 0 0 10px #CA32FF;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #000;
+    color: white;
+    resize: none;
+}
+
+.bigtext {
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
@@ -38,129 +46,12 @@ font-family: 'Raleway', sans-serif;
     justify-content: center;
     margin: 80px;
 }
-.smalltext{
-    font-size: 20px;
-   margin: 2vw 4vw;
-   font-family: Georgia, 'Times New Roman', Times, serif;
- 
-}
 
-
-
-.sign {
-  box-shadow: 0 0 10px #CA32FF;
-  backdrop-filter: blur(10px);
-  border-radius: 40px;
-  padding: 10px 50px;
-  background: #0f0018;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(116, 116, 116);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100px; 
-  height: 30px; 
-  right: auto;
-  font-size: 20px;
-  left: auto;
-  margin-bottom: 2vw;
-}
-
-.sign:hover {
-  background-color: rgb(54, 2, 54);
-}
-
-
-
-.generatedbox{
-    background-color:rgba(228, 196, 228, 0.048);
-    box-shadow: 0 0 5px #CA32FF;
-  backdrop-filter: blur(10px);
-    width: 40vw;
-    height: 40vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6vw;
-    border-radius: 20px;
-
-    margin-bottom: 5vw;
-
-}
-
-.imagebox1{
-
-    background-color: rgba(125, 86, 143, 0.767);
-    width: 37vw;
-    height: 37vw;
-    border-radius: 10px;
-
-}
-
-
-  
-  
-
-
-
-
-
-
-@media screen and (max-width: 1090px){
-    
-    .smalltext{
-        font-size: 10px;
-       margin: 2vw 4vw;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-     
-    }
-
-
-    .boxtype{
-        border-radius: 10px;
-
-    }
-
-    .boxtype{
-        box-shadow: 0 0 10px #CA32FF;
-        backdrop-filter: blur(10px);
-    border-radius: 50px;
-        width: 60vw;
-        height: 20vh;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    background-color:  rgba(228, 196, 228, 0.048);
-    margin: 50px auto;
-    font-family: 'Raleway', sans-serif;
-    }
-
-
-    .bigtext{
-        font-size: 30px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: 80px;
-        margin-right: auto;
-        margin-left: auto;
-        align-self: center;
-    }
-
-
-    
 .sign {
     box-shadow: 0 0 10px #CA32FF;
     backdrop-filter: blur(10px);
     border-radius: 40px;
-    padding: 7px 50px;
+    padding: 25px 70px;
     background: #0f0018;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(116, 116, 116);
@@ -169,270 +60,209 @@ font-family: 'Raleway', sans-serif;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 30px; 
-    height: 30px; 
-    right: auto;
-    font-size: 20px;
-    left: auto;
-    margin-bottom: 2vw;
-  }
-
-
-
-
-  .imagebox1{
-
-    background-color: rgba(125, 86, 143, 0.767);
-    width: 47vw;
-    height: 47vw;
-    border-radius: 10px;
-
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
 }
 
+.sign:hover {
+    background-color: rgb(54, 2, 54);
+}
 
-.generatedbox{
-    background-color:rgba(228, 196, 228, 0.048);
+.sign2 {
+    box-shadow: 0 0 10px #CA32FF;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 15px 50px;
+    background: #0f0018;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(116, 116, 116);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 2vw;
+}
+
+.sign2:hover {
+    background-color: rgb(54, 2, 54);
+}
+
+.generatedbox {
+    background-color: rgba(228, 196, 228, 0.048);
     box-shadow: 0 0 5px #CA32FF;
-  backdrop-filter: blur(10px);
-    width: 50vw;
-    height: 50vw;
+    backdrop-filter: blur(10px);
+    width: 40vw;
+    height: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6vw;
+    margin-top: 2vw;
     border-radius: 20px;
-    margin-bottom: 5vw;
-
+    margin-bottom: 2vw;
+    overflow: hidden; 
 }
 
-  
-  
-
+.imagebox1 {
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 10px;
+    background-color: rgba(125, 86, 143, 0.767);
 }
 
-
-@media screen and (max-width: 717px){
-
-    .bigtext{
-        font-size: 28px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: 80px;
-     margin-right: auto;
-     margin-left: auto;
-        align-self: center;
-    }
-
-
-    
-    .boxtype{
-        border-radius: 10px;
-
-    }
-
-}
-
-
-@media screen and (max-width: 531px){
-
-    .bigtext{
-        font-size: 26px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: 80px;
-        margin-right: auto;
-        margin-left: auto;
-   text-align: center;
-     
-    }
-
-
-
-    .boxtype{
-        box-shadow: 0 0 10px #CA32FF;
-        backdrop-filter: blur(10px);
-    border-radius: 50px;
-        width: 60vw;
-        height: 10vh;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    background-color:  rgba(228, 196, 228, 0.048);
-    margin: 50px auto;
-    font-family: 'Raleway', sans-serif;
-    }
-
-    
-    .sign {
-        box-shadow: 0 0 10px #CA32FF;
-        backdrop-filter: blur(10px);
-        border-radius: 40px;
-        padding: 4px 40px;
-        background: #0f0018;
-        color: rgb(255, 255, 255);
-        border: 1px solid rgb(116, 116, 116);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 20px; 
-        height: 20px; 
-        right: auto;
+@media screen and (max-width: 1090px) {
+    .smalltext {
         font-size: 10px;
-        left: auto;
-        margin-bottom: 2vw;
-      }
-
-      .boxtype{
-        border-radius: 10px;
-
+        margin: 2vw 4vw;
     }
 
-}
-
-@media screen and (max-width:  438px){
-    .boxtype{
-        box-shadow: 0 0 10px #CA32FF;
-        backdrop-filter: blur(10px);
-    border-radius: 30px;
-        width: 70vw;
-        height: 5vh;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    background-color:  rgba(228, 196, 228, 0.048);
-    margin: 50px auto;
-    font-family: 'Raleway', sans-serif;
+    .smalltext textarea {
+        margin-left: 21vw;
+        margin-bottom: 5vw;
     }
 
-
-    body{
-        background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
-        width: 100vw;
-        height: 100vh;
-    }
-
-
-    .bigtext{
-        font-size: 24px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+    .bigtext {
+        font-size: 30px;
         margin: 80px;
-        margin-right: auto;
-    margin-left: auto;
-        text-align: center;
     }
 
-    .smalltext{
-        font-size: 7px;
-       margin: 2vw 4vw;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-     
+    .sign, .sign2 {
+        padding: 15px 60px;
+        width: 80px;
+        height: 25px;
+        font-size: 16px;
     }
 
+    .imagebox1 {
+        max-width: 47vw;
+        max-height: 47vw;
+    }
 
-    .sign {
-        box-shadow: 0 0 10px #CA32FF;
-        backdrop-filter: blur(10px);
-        border-radius: 40px;
-        padding: 5px 30px;
-        background: #0f0018;
-        color: rgb(255, 255, 255);
-        border: 1px solid rgb(116, 116, 116);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 10px; 
-        height: 10px; 
-        right: auto;
-        font-size: 7px;
-        left: auto;
-        margin-bottom: 2vw;
-      }
-
-
-      .generatedbox{
-        background-color:rgba(228, 196, 228, 0.048);
-        box-shadow: 0 0 5px #CA32FF;
-      backdrop-filter: blur(10px);
+    .generatedbox {
         width: 50vw;
         height: 50vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 6vw;
-        border-radius: 20px;
-    
-        margin-bottom: 5vw;
-    
-    }
-    
-    .imagebox1{
-    
-        background-color: rgba(125, 86, 143, 0.767);
-        width: 47vw;
-        height: 47vw;
-        border-radius: 10px;
-    
-    }
-    
-
-    .boxtype{
-        border-radius: 10px;
-
     }
 }
 
+@media screen and (max-width: 717px) {
+    .bigtext {
+        font-size: 28px;
+    }
 
-@media screen and (max-width:  400px){
+    .smalltext textarea {
+        margin-left: 21vw;
+        margin-bottom: 5vw;
+    }
 
-    body{
+    .sign, .sign2 {
+        padding: 10px 50px;
+        width: 70px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .imagebox1 {
+        max-width: 47vw;
+        max-height: 47vw;
+    }
+
+    .generatedbox {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .bigtext {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .smalltext textarea {
+        margin-left: 21vw;
+        margin-bottom: 5vw;
+    }
+
+    .sign, .sign2 {
+        padding: 5px 40px;
+        width: 60px;
+        height: 18px;
+        font-size: 12px;
+    }
+
+    .boxtype {
+        border-radius: 10px;
+    }
+
+    .imagebox1 {
+        max-width: 47vw;
+        max-height: 47vw;
+    }
+
+    .generatedbox {
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    body {
         background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
         width: 100vw;
         height: 100vh;
     }
 
-    .bigtext{
-        font-size: 17px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: 80px;
-        margin-right: auto;
-        margin-left: auto;
+    .bigtext {
+        font-size: 24px;
         text-align: center;
     }
 
-    .smalltext{
+    .smalltext {
+        font-size: 7px;
+        margin: 2vw 4vw;
+    }
+
+    .sign, .sign2 {
+        padding: 5px 30px;
+        width: 50px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .generatedbox {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .imagebox1 {
+        max-width: 47vw;
+        max-height: 47vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sign, .sign2 {
+        padding: 5px 30px;
+        width: 50px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .bigtext {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .smalltext {
         font-size: 6px;
-       margin: 2vw 4vw;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-     
+        margin: 2vw 4vw;
     }
-
-    .boxtype{
-        border-radius: 10px;
-
-    }
-    
 }
