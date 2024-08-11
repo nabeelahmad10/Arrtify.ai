@@ -12,73 +12,98 @@
 </head>
 
 <body>
-
-
     <main>
         <div class="img">
             <img src="./../Images/Untitled (1).png" width="119px" style="padding: 20px 50px;" alt="">
         </div>
         <nav>
-            <div class="buttons " style="display: flex; justify-content: center; align-items: center;">
+            <div class="buttons" style="display: flex; justify-content: center; align-items: center;">
                 <span><a href="./../html/index.html" style="color: white; text-decoration: none;">Home</a></span>
-                <span>Generate</span>
+              
                 <span><a href="./../html/about.html" style="color: white; text-decoration: none;">About</a></span>
+
+                <span><a href="./../html/generate.html" style="color: white; text-decoration: none;">Generate</a></span>
             </div>
         </nav>
     </main>
 
     <div class="bigtext">INTERACTIVE ARTWORK GENERATOR</div>
-    <div class="boxtype">
-       
-        <div class="smalltext">
-           Describe what you want to see...</div>
-
-
-    </div>
-
-    <div class="sign">Submit</div>
-
-
-
-
-      </div>
-
-
-
-
-      <div class="generatedbox">
-
-
     
-          
-
-<div class="imagebox1">
-
-
-</div>
-
-
-<div class="imagebox2">
-
-
-
-
-
-      </div>
-
+    <div class="boxtype">
+        <form id="textForm">
+            <div class="smalltext">
+                <textarea id="textInput" placeholder="Describe what you want to see..."></textarea>
+            </div>
+            <button type="submit" id="submitButton" class="sign">Submit</button>
+        </form>
     </div>
 
-</div>
+    <div class="generatedbox">
+        <img id="generatedImage" class="imagebox1" src="" alt="" style="display: none;">
+    </div>
 
+    <div class="sign2" id="downloadButton">Download</div>
 
+    <script>
+        document.getElementById('textForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const description = document.getElementById('textInput').value;
 
+            if (!description.trim()) {
+                alert('Please enter a prompt.');
+                return;
+            }
 
-<div class="sign">Download</div>
+            fetch('/generate-image', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ description })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.imageUrl) {
+                    const generatedImage = document.getElementById('generatedImage');
+                    generatedImage.src = data.imageUrl;
+                    generatedImage.style.display = 'block'; // Show the generated image
+                } else {
+                    console.error('No image URL received from server.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to generate image. Please try again.');
+            });
+        });
 
+        document.getElementById('textInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); 
+                document.getElementById('textForm').dispatchEvent(new Event('submit')); 
+            }
+        });
 
-
-
-</div>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            const image = document.getElementById('generatedImage');
+            const imageUrl = image.src;
+            if (imageUrl && imageUrl !== '') {
+                const link = document.createElement('a');
+                link.href = imageUrl;
+                link.download = 'downloaded_image.png'; 
+                document.body.appendChild(link); 
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                alert('No image available for download.');
+            }
+        });
+    </script>
 </body>
 
 </html>
