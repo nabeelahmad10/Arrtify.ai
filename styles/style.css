@@ -2,6 +2,8 @@
 
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+
 
 }
 
@@ -21,6 +23,7 @@ nav {
 
   align-items: center;
   justify-content: center;
+  
 
 }
 
@@ -190,38 +193,43 @@ div.content {
 
 }
 
-
 .imagee {
   box-shadow: 0 0 20px #CA32FF;
   backdrop-filter: blur(90px);
-  padding: 50px;
-  margin: 50px;
+  padding: 20px;
+  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   z-index: 30;
-  border-radius: 100px;
+  border-radius: 40px;
   background-color: rgba(116, 71, 116, 0.048);
+  max-width: 90%; 
+  width: 95%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .immg {
   position: relative;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   border: 1px solid rgb(116, 116, 116);
   cursor: pointer;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
 }
 
 .immg img {
   transition: transform 0.3s ease;
-  height: 500px;
-  width: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .immg:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .message-overlay {
@@ -239,12 +247,9 @@ div.content {
 
 .message-overlay.show {
   opacity: 1;
-
 }
 
-
 .trynoww {
-  
   box-shadow: 0 0 10px #CA32FF;
   backdrop-filter: blur(90px);
   background-color: rgba(0, 0, 0, 0);
@@ -257,11 +262,10 @@ div.content {
   display: flex;
   align-items: center;
   justify-content: center;
- margin-left: auto;
- margin-right: auto;
- margin-top: 50px;
- margin-bottom: 50px;
- width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top: 1vw;
+ margin-bottom: 1vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   cursor: pointer;
@@ -272,107 +276,52 @@ div.content {
   color: rgb(212, 0, 212);
 }
 
-.immg img {
-
-  border-radius: 50px;
-  border: 1px solid rgb(116, 116, 116);
-  object-fit: cover;
-
-
-}
-
 .trynoww:hover {
   background-color: rgb(54, 2, 54);
 }
 
-
-
-
 @media screen and (max-width: 1793px) {
-
-  div .text2 {
+  .text2 {
     font-size: 35px;
-
   }
-
+  .trynoww {
+    font-size: 20px;
+  }
   .text5 {
     font-size: 22px;
   }
 
   .imagee {
-    width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    flex-direction: column;
-    margin-right: auto;
-    flex-wrap: wrap;
-
+    width: 80vw;
   }
-
 
   div.content {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+   
     justify-content: center;
   }
-
-
-
-
-
 }
-@media screen and (max-width: 3373px){
-  
-  
-}
-
 
 @media screen and (max-width: 1671px) {
-
-
-  div .text2 {
+  .text2 {
     font-size: 25px;
-
   }
 
   .trynow {
-
     margin-left: auto;
     margin-right: auto;
   }
-
-  .free {
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    font-size: 19px;
-    padding: 20px 50px;
+  .trynoww {
+    font-size: 15px;
 
   }
-
-  div.free {
-    width: 150px;
-  }
-
   .text5 {
     font-size: 15px;
   }
 
   .imagee {
-    width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    flex-direction: column;
-    margin-right: auto;
-    flex-wrap: wrap;
-
+    width: 70vw;
   }
 
   div.content {
@@ -384,569 +333,13 @@ div.content {
   }
 
   .image1 img {
-
     border-radius: 45px;
     width: 500px;
-
-
-
-
   }
-
-  div.free {
-    width: 90px;
-    height: 5px;
-    margin: 40px 10px;
-    white-space: nowrap;
-  }
-
-
 }
 
-
-
-
-@media screen and (max-width: 1308px) {
-
-
-  div .text2 {
-    font-size: 25px;
-
-  }
-
-  .text5 {
-    font-size: 15px;
-  }
-
-  div.img {
-    margin-right: 0;
-  }
-
-  main {
-    width: 70vw;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .buttons {
-    height: 33px;
-
-  }
-
-  div.buttons {
-    font-size: 12px;
-  }
-
-  .sign {
-    font-size: 10px;
-    width: 60px;
-  }
-
-  div.content {
-    width: 300px;
-  }
-
-  .content3 .text5 {
-    width: 700px;
-  }
-
-}
-
-
-
-
-
-
-@media screen and (max-width: 950px) {
-
-  .content3 .text5 {
-    width: 700px;
-  }
-
-  div.content {
-    width: 100px;
-  }
-
-
-  .text1 {
-    font-size: 35px;
-  }
-
-
-  .image1 img {
-
-    border-radius: 50px;
-    width: 400px;
-    margin-top: 20px;
-
-
-  }
-
-
-  .free {
-
-
-    font-size: 11px;
-    padding: 17px 15px;
-
-
-  }
-
-  .sign {
-    font-size: 8px;
-    width: 40px;
-    height: 6px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .buttons {
-    height: 23px;
-
-  }
-
-  main .nav {
-    gap: 2px;
-  }
-
-  div.buttons {
-    font-size: 12px;
-  }
-
-  .div .free {
-    font-size: 20px;
-    margin: 30px;
-  }
-
-  div.free {
-    width: 90px;
-    height: 5px;
-    margin: 20px 10px;
-  }
-
-  .imagee {
-    width: 400px;
-
-  }
-
-  .immg img {
-
-    border-radius: 25px;
-    width: 390px;
-    height: 400px;
-
-
-
-
-
-  }
-
-  .trynoww {
-    width: 12px;
-    height: 10px;
-    padding: 10px 70px;
-    font-size: 9px;
-    align-items: center;
-    text-align: center;
-    white-space: nowrap;
-    text-decoration: solid;
-    justify-content: center;
-    gap: 4px;
-
-  }
-
-
-
-}
-
-@media screen and (max-width: 889px) {
-
-
-  div .text2 {
-    font-size: 15px;
-  }
-
-  .content3 .text5 {
-    font-size: 13px;
-  }
-
-
-}
-
-
-@media screen and (max-width: 755px) {
-
-
-  div.content {
-    width: 50px;
-  }
-
-  .text1 {
-    font-size: 20px;
-  }
-
-  main {
-    width: 20vw;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-gap: 0px;
-
-
-  }
-
-  .content3 .text5 {
-    width: 600px;
-  }
-
-  div.content {
-    width: 250px;
-  }
-
-
-
-  .imagee {
-    width: 250px;
-
-  }
-
-  .immg img {
-
-    border-radius: 15x;
-    width: 250px;
-    height: 250px;
-
-
-
-
-
-  }
-
-  .image1 img {
-
-    border-radius: 40px;
-    width: 300px;
-    margin-top: 20px;
-
-
-
-  }
-
-  div.buttons {
-    gap: 30px;
-
-    
-  }
-
-  div.img img {
-    width: 60px;
-   
-    height: 60px;
-    align-items: center;
-    justify-self: center;
-margin-top: 15px;
-    margin-right: 20px;
-  }
-
-  .div .free {
-    font-size: 18px;
-    margin: 30px;
-  }
-
-  div.free {
-    width: 70px;
-    height: 10px;
-    margin: 20px 5px;
-    padding: 10px 20px;
-  }
-
-  div .text2 {
-    font-size: 15px;
-  }
-
-}
-
-
-@media screen and (max-width: 675px) {
-
-
-  div.content {
-    width: 300px;
-    gap: 70px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .imagee {
-width: 290px;
-  }
-
-  .immg img {
-
-    border-radius: 25px;
-    width: 250px;
-    height: 250px;
-
-
-
-
-
-  }
-
-  div.img img {
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-self: center;
-    margin-top: 12px;
-    margin-right: 20px;
-  }
-
-  .image1 img {
-
-    border-radius: 40px;
-    width: 300px;
-    margin-top: 20px;
-
-
-
-  }
-
-  div.img {
-    margin-right: 30px;
-  }
-
-  .buttons {
-    width: 30vw;
-    gap: 1px;
-
-
-  }
-
-  div.buttons {
-   gap: 15px;
-    margin-right: 50px;
-
-  }
-
-  .sign {
-    padding: 7px 15px;
-    font-size: 7px;
-    white-space: nowrap;
-  }
-
-  main {
-    width: 20vw;
-    height: 100px;
-  }
-
-  .content3 .text5 {
-    width: 500px;
-  }
-
-  div.img img {
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-self: center;
-    margin-top: 12px;
-    margin-right: 20px;
-  }
-
-  .div .free {
-    font-size: 18px;
-    margin: 30px;
-  }
-
-  div.free {
-    width: 70px;
-    height: 10px;
-    margin: 20px 5px;
-    padding: 10px 20px;
-  }
-
-  div .text2 {
-    font-size: 11px;
-  }
-
-
-}
-
-
-
-
-
-
-
-
-
-//564screeen
-
-@media screen and (max-width: 565px) {
-
-
-  .image1 img {
-    border-radius: 40px;
-    width: 100px;
-    margin-top: 20px;
-  }
-
-  div.content {
-    gap: 40px;
-  }
-
-
-
-  .text1 {
-    font-size: 20px;
-  }
-
-
-
-
-
-  div.img img {
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-self: center;
-    margin-top: 12px;
-    margin-right: 20px;
-  }
-
-
-  .content3 .text5 {
-    width: 300px;
-    font-size: 10px;
-  }
-
-
-
-  div.free {
-    width: 70px;
-    height: 10px;
-    margin: 20px 5px;
-    padding: 10px 20px;
-  }
-
-
-  div.text1 {
-    font-size: 20px;
-  }
-
-  .div .free {
-    font-size: 10px;
-    margin: 30px;
-  }
-
-
-
-
-
-}
-
-@media screen and (max-width: 535px) {
-
-  .image1 img {
-    border-radius: 20px;
-    width: 200px;
-    margin-top: 20px;
-  }
-
-  div .text2 {
-    font-size: 10px;
-  }
-  .content3 .text5 {
-    font-size: 10px;
-    width: 300px;
-  }
- div.img{
-  margin-right: 80px;
-}
-.line{
-  width: 100vw;
-}
-.sign{
-  margin-right: 150px;
-}
-}
-
-@media screen and (max-width: 468px) {
-
-  .image1 img {
-    border-radius: 10px;
-    width: 150px;
-    margin-top: 20px;
-  }
-
-  div .text2 {
-    font-size: 8px;
-  }
-  .content3 .text5 {
-    font-size: 8px;
-    width: 300px;
-  }
-  div.img{
-    margin-right: 0px;
-  }
-.line{
-  width: 100vw;
-}
-.text1 {
-  font-size: 15px;
-}
-.main{
-  margin-left: 130px;
-}
-
-.sign{
-  margin-right: 150px;
-}
-
-
-@media screen and (max-width: 385px) {
-
+@media screen and (max-width: px) {
  
-  div.img{
-    margin-right: 0px;
   }
 
 
-.sign{
-  margin-right: 150px;
-}
-
-
-
-
-
-.text2{
-  font-size: 5px;
-}
-
-.image1 img {
-
-  border-radius: 10px;
-  width: 130px;
-  margin-top: 20px;
-
-
-
-}
-
-.line{
-  width: 100vw;
-}
-.text1{
-  font-size: 15px;
-}
-
-div.buttons{
-  margin-right: 70px;
-}
-
-}

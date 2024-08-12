@@ -1,268 +1,268 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
-    width: 100%;
-    height: 100%;
+  background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
+  width: 100%;
+  height: 100%;
 }
 
 main {
-    right: 10px;
-    position: relative;
+  right: 10px;
+  position: relative;
 }
 
 .smalltext {
-    width: 50vw;
-    height: 15vh;
-    margin: 50px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: border-box;
+  width: 50vw;
+  height: 15vh;
+  margin: 50px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
 }
 
 .smalltext textarea {
-    background-color: rgba(228, 196, 228, 0.048);
-    box-shadow: 0 0 10px #CA32FF;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 2px solid #000;
-    color: white;
-    resize: none;
+  background-color: rgba(228, 196, 228, 0.048);
+  box-shadow: 0 0 10px #CA32FF;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #000;
+  color: white;
+  resize: none;
 }
 
 .bigtext {
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 80px;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 80px;
 }
 
 .sign {
-    box-shadow: 0 0 10px #CA32FF;
-    backdrop-filter: blur(10px);
-    border-radius: 40px;
-    padding: 25px 70px;
-    background: #0f0018;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(116, 116, 116);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100px;
-    height: 30px;
-    font-size: 18px;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
+  box-shadow: 0 0 10px #CA32FF;
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  padding: 25px 70px;
+  background: #0f0018;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(116, 116, 116);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
 }
 
 .sign:hover {
-    background-color: rgb(54, 2, 54);
+  background-color: rgb(54, 2, 54);
 }
 
 .sign2 {
-    box-shadow: 0 0 10px #CA32FF;
-    backdrop-filter: blur(10px);
-    border-radius: 40px;
-    padding: 15px 50px;
-    background: #0f0018;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(116, 116, 116);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100px;
-    height: 30px;
-    font-size: 18px;
-    margin-bottom: 2vw;
+  box-shadow: 0 0 10px #CA32FF;
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  padding: 15px 50px;
+  background: #0f0018;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(116, 116, 116);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 2vw;
 }
 
 .sign2:hover {
-    background-color: rgb(54, 2, 54);
+  background-color: rgb(54, 2, 54);
 }
 
 .generatedbox {
-    background-color: rgba(228, 196, 228, 0.048);
-    box-shadow: 0 0 5px #CA32FF;
-    backdrop-filter: blur(10px);
-    width: 40vw;
-    height: 40vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2vw;
-    border-radius: 20px;
-    margin-bottom: 2vw;
-    overflow: hidden; 
+  background-color: rgba(228, 196, 228, 0.048);
+  box-shadow: 0 0 5px #CA32FF;
+  backdrop-filter: blur(10px);
+  width: 40vw;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  border-radius: 20px;
+  margin-bottom: 2vw;
+  overflow: hidden; 
 }
 
 .imagebox1 {
-    max-width: 100%; 
-    max-height: 100%; 
-    border-radius: 10px;
-    background-color: rgba(125, 86, 143, 0.767);
+  max-width: 100%; 
+  max-height: 100%; 
+  border-radius: 10px;
+  background-color: rgba(125, 86, 143, 0.767);
 }
 
 @media screen and (max-width: 1090px) {
-    .smalltext {
-        font-size: 10px;
-        margin: 2vw 4vw;
-    }
+  .smalltext {
+      font-size: 10px;
+      margin: 2vw 4vw;
+  }
 
-    .smalltext textarea {
-        margin-left: 21vw;
-        margin-bottom: 5vw;
-    }
+  .smalltext textarea {
+      margin-left: 21vw;
+      margin-bottom: 5vw;
+  }
 
-    .bigtext {
-        font-size: 30px;
-        margin: 80px;
-    }
+  .bigtext {
+      font-size: 30px;
+      margin: 80px;
+  }
 
-    .sign, .sign2 {
-        padding: 15px 60px;
-        width: 80px;
-        height: 25px;
-        font-size: 16px;
-    }
+  .sign, .sign2 {
+      padding: 15px 60px;
+      width: 80px;
+      height: 25px;
+      font-size: 16px;
+  }
 
-    .imagebox1 {
-        max-width: 47vw;
-        max-height: 47vw;
-    }
+  .imagebox1 {
+      max-width: 47vw;
+      max-height: 47vw;
+  }
 
-    .generatedbox {
-        width: 50vw;
-        height: 50vw;
-    }
+  .generatedbox {
+      width: 50vw;
+      height: 50vw;
+  }
 }
 
 @media screen and (max-width: 717px) {
-    .bigtext {
-        font-size: 28px;
-    }
+  .bigtext {
+      font-size: 28px;
+  }
 
-    .smalltext textarea {
-        margin-left: 21vw;
-        margin-bottom: 5vw;
-    }
+  .smalltext textarea {
+      margin-left: 21vw;
+      margin-bottom: 5vw;
+  }
 
-    .sign, .sign2 {
-        padding: 10px 50px;
-        width: 70px;
-        height: 20px;
-        font-size: 14px;
-    }
+  .sign, .sign2 {
+      padding: 10px 50px;
+      width: 70px;
+      height: 20px;
+      font-size: 14px;
+  }
 
-    .imagebox1 {
-        max-width: 47vw;
-        max-height: 47vw;
-    }
+  .imagebox1 {
+      max-width: 47vw;
+      max-height: 47vw;
+  }
 
-    .generatedbox {
-        width: 50vw;
-        height: 50vw;
-    }
+  .generatedbox {
+      width: 50vw;
+      height: 50vw;
+  }
 }
 
 @media screen and (max-width: 531px) {
-    .bigtext {
-        font-size: 26px;
-        text-align: center;
-    }
+  .bigtext {
+      font-size: 26px;
+      text-align: center;
+  }
 
-    .smalltext textarea {
-        margin-left: 21vw;
-        margin-bottom: 5vw;
-    }
+  .smalltext textarea {
+      margin-left: 21vw;
+      margin-bottom: 5vw;
+  }
 
-    .sign, .sign2 {
-        padding: 5px 40px;
-        width: 60px;
-        height: 18px;
-        font-size: 12px;
-    }
+  .sign, .sign2 {
+      padding: 5px 40px;
+      width: 60px;
+      height: 18px;
+      font-size: 12px;
+  }
 
-    .boxtype {
-        border-radius: 10px;
-    }
+  .boxtype {
+      border-radius: 10px;
+  }
 
-    .imagebox1 {
-        max-width: 47vw;
-        max-height: 47vw;
-    }
+  .imagebox1 {
+      max-width: 47vw;
+      max-height: 47vw;
+  }
 
-    .generatedbox {
-        width: 50vw;
-        height: 50vw;
-    }
+  .generatedbox {
+      width: 50vw;
+      height: 50vw;
+  }
 }
 
 @media screen and (max-width: 438px) {
-    body {
-        background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
-        width: 100vw;
-        height: 100vh;
-    }
+  body {
+      background: linear-gradient(180deg, #0f0018 40%, #22003D 100%);
+      width: 100vw;
+      height: 100vh;
+  }
 
-    .bigtext {
-        font-size: 24px;
-        text-align: center;
-    }
+  .bigtext {
+      font-size: 24px;
+      text-align: center;
+  }
 
-    .smalltext {
-        font-size: 7px;
-        margin: 2vw 4vw;
-    }
+  .smalltext {
+      font-size: 7px;
+      margin: 2vw 4vw;
+  }
 
-    .sign, .sign2 {
-        padding: 5px 30px;
-        width: 50px;
-        height: 15px;
-        font-size: 10px;
-    }
+  .sign, .sign2 {
+      padding: 5px 30px;
+      width: 50px;
+      height: 15px;
+      font-size: 10px;
+  }
 
-    .generatedbox {
-        width: 50vw;
-        height: 50vw;
-    }
+  .generatedbox {
+      width: 50vw;
+      height: 50vw;
+  }
 
-    .imagebox1 {
-        max-width: 47vw;
-        max-height: 47vw;
-    }
+  .imagebox1 {
+      max-width: 47vw;
+      max-height: 47vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .sign, .sign2 {
-        padding: 5px 30px;
-        width: 50px;
-        height: 15px;
-        font-size: 10px;
-    }
+  .sign, .sign2 {
+      padding: 5px 30px;
+      width: 50px;
+      height: 15px;
+      font-size: 10px;
+  }
 
-    .bigtext {
-        font-size: 17px;
-        text-align: center;
-    }
+  .bigtext {
+      font-size: 17px;
+      text-align: center;
+  }
 
-    .smalltext {
-        font-size: 6px;
-        margin: 2vw 4vw;
-    }
+  .smalltext {
+      font-size: 6px;
+      margin: 2vw 4vw;
+  }
 }
