@@ -250,13 +250,15 @@ div.content {
 }
 
 .trynoww {
+ 
+  text-decoration: none;
   box-shadow: 0 0 10px #CA32FF;
   backdrop-filter: blur(90px);
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid rgb(116, 116, 116);
   border-radius: 40px;
   color: white;
-  padding: 25px 30px;
+  padding: 20px 25px;
   font-size: 20px;
   white-space: nowrap;
   display: flex;
@@ -264,14 +266,14 @@ div.content {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
- margin-top: 1vw;
- margin-bottom: 1vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 300px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   cursor: pointer;
   gap: 9px;
 }
-
 .trynoww .two {
   color: rgb(212, 0, 212);
 }
