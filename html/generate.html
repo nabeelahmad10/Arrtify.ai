@@ -30,12 +30,13 @@
     <div class="bigtext">INTERACTIVE ARTWORK GENERATOR</div>
     
     <div class="boxtype">
-        <form id="textForm">
-            <div class="smalltext">
-                <textarea id="textInput" placeholder="Describe what you want to see..."></textarea>
-            </div>
-            <button type="submit" id="submitButton" class="sign">Submit</button>
-        </form>
+       <form id="textForm" action="/generate-image" method="post">
+    <div class="smalltext">
+        <textarea id="textInput" name="description" placeholder="Describe what you want to see..."></textarea>
+    </div>
+    <button type="submit" id="submitButton" class="sign">Submit</button>
+</form>
+
     </div>
 
     <div class="generatedbox">
