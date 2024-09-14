@@ -6,3 +6,6 @@ scikit-learn
 ipywidgets
 accelerate
 torch 
+streamlit
+flask
+torchvision
