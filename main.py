@@ -46,7 +46,7 @@ def image_to_base64(image_path):
 st.title("Optimized Text-to-Image Generator")
 
 # Convert background image to base64
-background_image_path = "static/Artifyai.jpg"  # Correct path to your JPG file
+background_image_path = "static/ARRTIFYAI.gif"  # Adjusted for GIF
 if os.path.exists(background_image_path):
     base64_background = image_to_base64(background_image_path)
     # Apply the background using base64 encoding
@@ -54,7 +54,7 @@ if os.path.exists(background_image_path):
         f"""
         <style>
         .stApp {{
-            background-image: url("data:image/jpg;base64,{base64_background}");
+            background-image: url("data:image/gif;base64,{base64_background}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -65,26 +65,34 @@ if os.path.exists(background_image_path):
         unsafe_allow_html=True
     )
 else:
-    st.warning("Background image not found. Make sure the JPG file is in the 'static' folder.")
+    st.warning("Background image not found. Make sure the GIF file is in the 'static' folder.")
 
 # Text input for the image prompt
 prompt = st.text_input("Enter a prompt to generate an image:")
+
+if st.button("Clear"):
+    st.session_state['show_image'] = False
+    st.experimental_rerun()
 
 if st.button("Generate"):
     if prompt:
         with st.spinner('Generating image...'):
             generated_image = generate_image(prompt)
-        st.image(generated_image, caption="Generated Image", use_column_width=True)
+        st.session_state['show_image'] = True
+        st.session_state['image'] = generated_image
 
-        # Provide option to download image
-        img_byte_arr = io.BytesIO()
-        generated_image.save(img_byte_arr, format='PNG')  # Convert image to bytes
-        img_byte_arr = img_byte_arr.getvalue()  # Get image bytes
+if st.session_state.get('show_image', False):
+    st.image(st.session_state['image'], caption="Generated Image", use_column_width=True)
 
-        # Download button for the generated image
-        st.download_button(
-            label="Download Image",
-            data=img_byte_arr,
-            file_name="generated_image.png",
-            mime="image/png"
-        )
+    # Provide option to download image
+    img_byte_arr = io.BytesIO()
+    st.session_state['image'].save(img_byte_arr, format='PNG')  # Convert image to bytes
+    img_byte_arr = img_byte_arr.getvalue()  # Get image bytes
+
+    # Download button for the generated image
+    st.download_button(
+        label="Download Image",
+        data=img_byte_arr,
+        file_name="generated_image.png",
+        mime="image/png"
+    )
